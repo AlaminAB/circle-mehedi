@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="24px" viewBox="0 0 29 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Mail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mail" fill="#3B3B3B" fill-rule="nonzero">
+            <path d="M14.418,10.31628 C16.8744,10.31628 28.818,3.6 28.818,3.6 L28.8372,2.4 C28.8372,1.0752 27.762,0 26.4336,0 L2.4024,0 C1.0752,0 0,1.0752 0,2.4 L0,3.4692 C0,3.4692 12.0744,10.31628 14.418,10.31628 Z M14.418,13.61628 C12.0744,13.61628 0.018,7.2 0.0192,7.2 L0,21.6 C0,22.9248 1.0764,24 2.4024,24 L26.4336,24 C27.762,24 28.8372,22.9248 28.8372,21.6 L28.818,7.2 C28.818,7.2 16.9872,13.61628 14.418,13.61628 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

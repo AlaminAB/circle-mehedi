@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>close-envelope</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="Page-3" transform="translate(-26.000000, -987.000000)" fill="#030104">
+            <g id="Group" transform="translate(26.000000, 985.000000)">
+                <g id="close-envelope" transform="translate(0.000000, 2.222222)">
+                    <path d="M9.32792208,9.33333333 L7.01992764,7.312 L0.421089054,12.972 C0.660949907,13.1946667 0.984762059,13.3333333 1.34188822,13.3333333 L17.3139559,13.3333333 C17.6697495,13.3333333 17.9922291,13.1946667 18.2307574,12.972 L11.6359165,7.312 L9.32792208,9.33333333 Z" id="Path"></path>
+                    <path d="M17.8110009,0.361333333 C17.5711401,0.137333333 17.2486605,0 16.8902018,0 L0.918134045,0 C0.562340445,0 0.239860853,0.138666667 0,0.364 L8.9041679,8 L17.8110009,0.361333333 Z" id="Path"></path>
+                    <polygon id="Path" points="0 1.17066667 0 12.248 6.44026391 6.772"></polygon>
+                    <polygon id="Path" points="12.2155802 6.772 18.6558442 12.248 18.6558442 1.16666667"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
