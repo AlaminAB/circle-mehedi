@@ -14,7 +14,7 @@
         rotateParentInstantly: false,
         touchElement: null
     };
-    let array = ["assets/img/1.png", "assets/img/2.jpg", "assets/img/3.jpg", "assets/img/4.jpg", "assets/img/4.jpg", "assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg", "assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg", "assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg", "assets/img/15.jpg", "assets/img/16.jpg", "assets/img/16.jpg", "assets/img/18.jpg", "assets/img/19.jpg", "assets/img/20.jpg", "assets/img/21.jpg", "assets/img/22.png", "assets/img/23.png"];
+    let array = ["assets/img/1.png", "assets/img/2.jpg", "assets/img/3.jpg", "assets/img/4.jpg", "assets/img/4.jpg", "assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg", "assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg", "assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg", "assets/img/15.jpg", "assets/img/16.jpg", "assets/img/16.jpg", "assets/img/18.jpg", "assets/img/19.jpg", "assets/img/20.jpg", "assets/img/21.jpg", "assets/img/22.png", "assets/img/1.png","assets/img/5.jpg","assets/img/12.jpg","assets/img/15.jpg","assets/img/10.jpg","assets/img/8.jpg"];
 
     let middle_img = document.querySelector("#middle-img");
 
@@ -794,3 +794,7 @@ let chck = new Propeller('.circle', {
 
 
 // console.log(chck.updateCSS())
+
+document.querySelector(".got-button").addEventListener("click",function(){
+    document.querySelector(".main-wrapper-overly").style.display="none"
+})

@@ -1,0 +1,293 @@
+
+.circle-wrapper{
+    width: 70vw;
+    height: 100vh;
+    background: #1E1E1E;
+}
+.main-wrapper {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  top: 52%;
+  transform: translateY(-52%);
+  margin-left:10vw;
+}
+.circle {
+  transition-timing-function: linear;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.middle-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: 53%;
+  height: 53%;
+}
+
+.middle-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+
+.triger-img{
+    background: #D3D3D3;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    cursor: url(https://d2p8kxfsucab5j.cloudfront.net/hand-small.png) 30 40,auto;
+    cursor: -webkit-image-set(url(https://d2p8kxfsucab5j.cloudfront.net/hand-small.png) 1x, url(https://d2p8kxfsucab5j.cloudfront.net/hand.png) 2x) 30 40,auto;
+
+}
+.same-style-round {
+  position: absolute;
+  height: auto;
+  z-index: 999;
+  color: #fff;
+  margin-right: 20px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.round-text1 {
+  top: -60px;
+  left: 270px;
+}
+
+.round-text2 {
+  left: auto;
+  right: 110px;
+  top: -40px;
+  transform: rotate(0deg);
+}
+
+.round-text3 {
+  top: 8px;
+  left: auto;
+  right: -5px;
+}
+
+.round-text4 {
+  left: auto;
+  right: -35px;
+  top: 66px;
+}
+
+.round-text5 {
+  left: auto;
+  right: -93px;
+  top: 135px;
+}
+
+.round-text8 {
+  left: auto;
+  right: -102px;
+  top: 345px;
+}
+
+.round-text9 {
+  top: auto;
+  left: auto;
+  right: -92px;
+  bottom: 152px;
+}
+
+.round-text10 {
+  top: auto;
+  left: auto;
+  right: -88px;
+  bottom: 90px;
+}
+
+.round-text11 {
+  left: auto;
+  right: 16px;
+  top: auto;
+  bottom: 32px;
+}
+
+.same-style-round h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0;
+  white-space: normal;
+}
+.same-style-round p{
+    white-space: normal;
+}
+.same-style-round a {
+  font-size: 12px;
+  white-space: normal;
+  color: #838383 !important;
+}
+
+.round-text6 {
+  left: auto;
+  top: 213px;
+  right: -78px;
+}
+
+.round-text7 {
+  top: 260px;
+  left: auto;
+  right: -112px;
+  margin-top: 20px;
+}
+
+.round-text12 {
+  top: auto;
+  bottom: -20px;
+  left: auto;
+  right: 53px;
+}
+
+.round-text13 {
+  top: auto;
+  left: auto;
+  bottom: -49px;
+  right: 151px;
+}
+
+.round-text14 {
+  top: auto;
+  bottom: -56px;
+  left: 250px;
+}
+
+.round-text15 {
+  top: auto;
+  left: 118px;
+  bottom: -44px;
+  right: auto;
+}
+
+.round-text16 {
+  top: auto;
+  bottom: 8px;
+  left: 74px;
+  right: auto;
+}
+
+.round-text17 {
+  top: auto;
+  left: 15px;
+  bottom: 60px;
+}
+
+.round-text18 {
+  top: auto;
+  left: -83px;
+  bottom: 102px;
+}
+
+.round-text19 {
+  top: auto;
+  left: -62px;
+  bottom: 158px;
+}
+
+.round-text20 {
+  top: auto;
+  left: -84px;
+  bottom: 215px;
+}
+
+.round-text21 {
+  left: -107px;
+  top: 283px;
+}
+
+.round-text22 {
+  top: 230px;
+  left: -85px;
+}
+
+.round-text23 {left: -67px;top: 174px;}
+
+.round-text24 {
+  top: 123px;
+  left: -25px;
+}
+
+.round-text25 {
+  left: -50px;
+  top: 73px;
+}
+.round-text26 {
+    left: 35px;
+    top: 25px;
+}
+
+.round-text27 {
+    left: 62px;
+    top: -16px;
+}
+
+.round-text28 {
+    top: -52px;
+    left: 169px;
+}
+.main-wrapper-overly {
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: #000000b8;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    z-index: 9999;
+}
+
+.main-wrapper-overly-text p {
+    white-space: normal;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.main-wrapper-overly-text a {
+    white-space: normal;
+    text-align: center;
+    padding: 8px 14px;
+    font-size: 16px;
+    border: 2px solid #d3d3d3;
+    border-radius: 20px;
+    background: #d3d3d3;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+.main-wrapper-img {
+    display: flex;
+    margin-top: -236px;
+    margin-left: 68px;
+}
+img#hand-sign {
+    height: 80px;
+    width: 53px;
+}
+
+img#target-img {
+    height: 119px;
+}
+
+.main-wrapper-overly-text {
+    margin-top: 77px;
+}
