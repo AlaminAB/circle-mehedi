@@ -1,17 +1,25 @@
-
-.circle-wrapper{
-    width: 70vw;
+/* .o-scroll_section.change-position {
+    position: absolute;
+    left: 0;
+    margin-left: 2880px;
+    top: 0;
+    z-index: 99999;
+} */
+.absolute-div {
+    height: 100%;
+    align-items: center;
+    display: grid;
+}.circle-wrapper{
+    width: 1000px;
     height: 100vh;
     background: #1E1E1E;
+    margin-left: 350px;
+    margin-top: 20px;
 }
 .main-wrapper {
   position: relative;
   width: 600px;
   height: 600px;
-  border-radius: 50%;
-  top: 52%;
-  transform: translateY(-52%);
-  margin-left:10vw;
 }
 .circle {
   transition-timing-function: linear;
@@ -20,6 +28,7 @@
   height: 600px;
   border-radius: 50%;
   overflow: hidden;
+
 }
 
 .middle-img {
@@ -44,13 +53,14 @@
     height: 100%;
     width: 100%;
     z-index: 10;
-    cursor: url(https://d2p8kxfsucab5j.cloudfront.net/hand-small.png) 30 40,auto;
-    cursor: -webkit-image-set(url(https://d2p8kxfsucab5j.cloudfront.net/hand-small.png) 1x, url(https://d2p8kxfsucab5j.cloudfront.net/hand.png) 2x) 30 40,auto;
+    
 
 }
+.triger-img img{}
 .same-style-round {
   position: absolute;
   height: auto;
+  width: 200px;
   z-index: 999;
   color: #fff;
   margin-right: 20px;
@@ -62,59 +72,60 @@
 
 .round-text1 {
   top: -60px;
-  left: 270px;
+  left: 250px;
 }
 
 .round-text2 {
   left: auto;
-  right: 110px;
-  top: -40px;
+  right: -61px;
+  top: -45px;
   transform: rotate(0deg);
 }
 
 .round-text3 {
-  top: 8px;
+  top: 69px;
   left: auto;
-  right: -5px;
+  right: -176px;
 }
 
 .round-text4 {
   left: auto;
-  right: -35px;
-  top: 66px;
+  right: -230px;
+  top: 168px;
 }
 
 .round-text5 {
   left: auto;
-  right: -93px;
-  top: 135px;
+  right: -245px;
+  top: 270px;
 }
 
 .round-text8 {
   left: auto;
-  right: -102px;
-  top: 345px;
+  right: -43px;
+  top: auto;
+  bottom: -54px;
 }
 
 .round-text9 {
   top: auto;
   left: auto;
-  right: -92px;
-  bottom: 152px;
+  right: 137px;
+  bottom: -58px;
 }
 
 .round-text10 {
   top: auto;
-  left: auto;
-  right: -88px;
-  bottom: 90px;
+  left: 6px;
+  right: auto;
+  bottom: -22px;
 }
 
 .round-text11 {
-  left: auto;
-  right: 16px;
+  left: -94px;
+  right: auto;
   top: auto;
-  bottom: 32px;
+  bottom: 68px;
 }
 
 .same-style-round h4 {
@@ -129,53 +140,50 @@
 .same-style-round a {
   font-size: 12px;
   white-space: normal;
-  color: #838383 !important;
 }
 
 .round-text6 {
   left: auto;
-  top: 213px;
-  right: -78px;
+  top: auto;
+  right: -223px;
+  bottom: 137px;
 }
 
 .round-text7 {
-  top: 260px;
+  top: auto;
   left: auto;
-  right: -112px;
-  margin-top: 20px;
+  right: -163px;
+  bottom: 60px;
 }
 
 .round-text12 {
   top: auto;
-  bottom: -20px;
-  left: auto;
-  right: 53px;
+  bottom: 184px;
+  left: -143px;
+  right: auto;
 }
 
 .round-text13 {
-  top: auto;
-  left: auto;
-  bottom: -49px;
-  right: 151px;
+  top: 272px;
+  left: -162px;
+  right: auto;
 }
 
 .round-text14 {
-  top: auto;
-  bottom: -56px;
-  left: 250px;
+  top: 166px;
+  left: -100px;
+  right: auto;
 }
 
 .round-text15 {
-  top: auto;
-  left: 118px;
-  bottom: -44px;
+  top: 63px;
+  left: -80px;
   right: auto;
 }
 
 .round-text16 {
-  top: auto;
-  bottom: 8px;
-  left: 74px;
+  top: -28px;
+  left: 71px;
   right: auto;
 }
 
@@ -288,6 +296,30 @@ img#target-img {
     height: 119px;
 }
 
-.main-wrapper-overly-text {
-    margin-top: 77px;
+
+
+/* removal  */
+/* .main-wrapper:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 108%;
+    height: 108%;
+    border: 1px solid red;
+    content: "";
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
 }
+
+.main-wrapper:before {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    content: "";
+    background: lime;
+    /* transform: rotate(-90deg); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+} */

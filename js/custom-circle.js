@@ -14,7 +14,7 @@
         rotateParentInstantly: false,
         touchElement: null
     };
-    let array = ["assets/img/1.png", "assets/img/2.jpg", "assets/img/3.jpg", "assets/img/4.jpg", "assets/img/4.jpg", "assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg", "assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg", "assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg", "assets/img/15.jpg", "assets/img/16.jpg", "assets/img/16.jpg", "assets/img/18.jpg", "assets/img/19.jpg", "assets/img/20.jpg", "assets/img/21.jpg", "assets/img/22.png", "assets/img/1.png","assets/img/5.jpg","assets/img/12.jpg","assets/img/15.jpg","assets/img/10.jpg","assets/img/8.jpg"];
+    let array = ["assets/img/1.png", "assets/img/2.jpg", "assets/img/3.jpg", "assets/img/4.jpg", "assets/img/4.jpg", "assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg", "assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg", "assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg", "assets/img/15.jpg", "assets/img/16.jpg"];
 
     let middle_img = document.querySelector("#middle-img");
 
@@ -61,152 +61,98 @@
             function remove_color() {
                 let ele = document.querySelectorAll(".same-style-round > a")
                 for (let a = 0; a < ele.length; a++) {
-                    ele[a].style.color = "white"
+                    ele[a].style.color = "#838383"
                 }
             }
 
 
-            if (self.angle > 0 && self.angle < 15) {
+            if (self.angle > 0 && self.angle < 22.5) {
                 remove_color();
                 middle_img.src = array[0]
                 document.querySelector(".round-text1 > a").style.color = "#DCB31A ";
-            } else if (self.angle > 14 && self.angle < 28) {
+            } else if (self.angle > 22.5 && self.angle < 45) {
                 remove_color();
                 middle_img.src = array[1];
                 document.querySelector(".round-text2 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 28 && self.angle < 42) {
+            } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
                 middle_img.src = array[2];
                 document.querySelector(".round-text3 > a").style.color = "#DCB31A";
-            } else if (self.angle > 42 && self.angle < 56) {
+            } else if (self.angle > 67.5 && self.angle < 90) {
                 remove_color();
                 middle_img.src = array[3];
                 document.querySelector(".round-text4 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 56 && self.angle < 70) {
+            } else if (self.angle > 90 && self.angle <112.5) {
                 remove_color();
                 middle_img.src = array[4];
                 document.querySelector(".round-text5 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 70 && self.angle < 84) {
+            } else if (self.angle > 112.5 && self.angle < 135) {
                 remove_color();
                 middle_img.src = array[5];
 
-            } else if (self.angle > 84 && self.angle < 98) {
+            } else if (self.angle > 135 && self.angle <157.5) {
                 remove_color();
                 middle_img.src = array[6];
                 document.querySelector(".round-text7 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 98 && self.angle < 112) {
+            } else if (self.angle > 157.5 && self.angle < 180) {
                 remove_color();
 
                 middle_img.src = array[7];
                 document.querySelector(".round-text8 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 112 && self.angle < 126) {
+            } else if (self.angle > 180 && self.angle < 202.5) {
                 remove_color();
 
                 middle_img.src = array[8];
                 document.querySelector(".round-text9 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 126 && self.angle < 140) {
+            } else if (self.angle > 202.5 && self.angle < 225) {
                 remove_color();
 
                 middle_img.src = array[9];
                 document.querySelector(".round-text10 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 140 && self.angle < 154) {
+            } else if (self.angle > 225 && self.angle < 247.5) {
                 remove_color();
 
                 middle_img.src = array[10];
                 document.querySelector(".round-text11 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 154 && self.angle < 168) {
+            } else if (self.angle > 247.5 && self.angle < 270) {
                 remove_color();
 
                 middle_img.src = array[11];
                 document.querySelector(".round-text12 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 168 && self.angle < 182) {
+            } else if (self.angle > 270 && self.angle < 292.5) {
                 remove_color();
 
                 middle_img.src = array[12];
                 document.querySelector(".round-text13 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 182 && self.angle < 196) {
+            } else if (self.angle > 292.5 && self.angle < 315) {
                 remove_color();
 
                 middle_img.src = array[13];
                 document.querySelector(".round-text14 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 196 && self.angle < 210) {
+            } else if (self.angle > 315 && self.angle < 337.5) {
                 remove_color();
 
                 middle_img.src = array[14];
                 document.querySelector(".round-text15 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 210 && self.angle < 224) {
+            } else if (self.angle > 337.5 && self.angle < 360) {
                 remove_color();
 
                 middle_img.src = array[15];
                 document.querySelector(".round-text16 > a").style.color = "#DCB31A";
 
-            } else if (self.angle > 224 && self.angle < 238) {
-                remove_color();
-
-                middle_img.src = array[16];
-                document.querySelector(".round-text17 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 238 && self.angle < 252) {
-                remove_color();
-
-                middle_img.src = array[17];
-                document.querySelector(".round-text18 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 252 && self.angle < 266) {
-                remove_color();
-
-                middle_img.src = array[18];
-                document.querySelector(".round-text19 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 266 && self.angle < 280) {
-                remove_color();
-
-                middle_img.src = array[19];
-                document.querySelector(".round-text20 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 280 && self.angle < 294) {
-                remove_color();
-
-                middle_img.src = array[20];
-                document.querySelector(".round-text21 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 294 && self.angle < 308) {
-                remove_color();
-
-                middle_img.src = array[21];
-                document.querySelector(".round-text22 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 308 && self.angle < 322) {
-                remove_color();
-
-                middle_img.src = array[22];
-                document.querySelector(".round-text23 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 322 && self.angle < 336) {
-                remove_color();
-
-                middle_img.src = array[23];
-                document.querySelector(".round-text24 > a").style.color = "#DCB31A";
-
-            } else if (self.angle > 336 && self.angle < 350) {
-                remove_color();
-
-                middle_img.src = array[24];
-                document.querySelector(".round-text25 > a").style.color = "#DCB31A";
-
-            }
+            } 
             if (count > array.length - 1) {
                 count = 0;
             }
