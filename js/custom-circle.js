@@ -92,6 +92,8 @@
             } else if (self.angle > 112.5 && self.angle < 135) {
                 remove_color();
                 middle_img.src = array[5];
+                document.querySelector(".round-text6 > a").style.color = "#DCB31A";
+
 
             } else if (self.angle > 135 && self.angle <157.5) {
                 remove_color();
