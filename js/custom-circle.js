@@ -70,89 +70,133 @@
                 remove_color();
                 middle_img.src = array[0]
                 document.querySelector(".round-text1 > a").style.color = "#DCB31A ";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 1";
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2006</h2>"
+
+
             } else if (self.angle > 22.5 && self.angle < 45) {
                 remove_color();
                 middle_img.src = array[1];
                 document.querySelector(".round-text2 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 2";
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2007</h2>"
 
             } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
                 middle_img.src = array[2];
                 document.querySelector(".round-text3 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 3"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2008</h2>"
+
             } else if (self.angle > 67.5 && self.angle < 90) {
                 remove_color();
                 middle_img.src = array[3];
                 document.querySelector(".round-text4 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 4"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2009</h2>"
+
 
             } else if (self.angle > 90 && self.angle <112.5) {
                 remove_color();
                 middle_img.src = array[4];
                 document.querySelector(".round-text5 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 5"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2010</h2>"
+
 
             } else if (self.angle > 112.5 && self.angle < 135) {
                 remove_color();
                 middle_img.src = array[5];
                 document.querySelector(".round-text6 > a").style.color = "#DCB31A";
-
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 6"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2011</h2>"
 
             } else if (self.angle > 135 && self.angle <157.5) {
                 remove_color();
                 middle_img.src = array[6];
                 document.querySelector(".round-text7 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 7"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2011</h2>"
+
 
             } else if (self.angle > 157.5 && self.angle < 180) {
                 remove_color();
 
                 middle_img.src = array[7];
                 document.querySelector(".round-text8 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 8"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2012</h2>"
+
 
             } else if (self.angle > 180 && self.angle < 202.5) {
                 remove_color();
 
                 middle_img.src = array[8];
                 document.querySelector(".round-text9 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 9"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2013</h2>"
+
 
             } else if (self.angle > 202.5 && self.angle < 225) {
                 remove_color();
 
                 middle_img.src = array[9];
                 document.querySelector(".round-text10 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 10"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2014</h2>"
+
 
             } else if (self.angle > 225 && self.angle < 247.5) {
                 remove_color();
 
                 middle_img.src = array[10];
                 document.querySelector(".round-text11 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 11"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2015</h2>"
+
 
             } else if (self.angle > 247.5 && self.angle < 270) {
                 remove_color();
 
                 middle_img.src = array[11];
                 document.querySelector(".round-text12 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 12"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2016</h2>"
+
 
             } else if (self.angle > 270 && self.angle < 292.5) {
                 remove_color();
 
                 middle_img.src = array[12];
                 document.querySelector(".round-text13 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process"
+                    document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2017</h2>"
 
             } else if (self.angle > 292.5 && self.angle < 315) {
                 remove_color();
 
                 middle_img.src = array[13];
                 document.querySelector(".round-text14 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through"
+                    document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2018</h2>"
 
             } else if (self.angle > 315 && self.angle < 337.5) {
                 remove_color();
 
                 middle_img.src = array[14];
                 document.querySelector(".round-text15 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process "
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2019</h2>"
+
 
             } else if (self.angle > 337.5 && self.angle < 360) {
                 remove_color();
 
                 middle_img.src = array[15];
                 document.querySelector(".round-text16 > a").style.color = "#DCB31A";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience Last"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2020</h2>"
+
 
             } 
             if (count > array.length - 1) {

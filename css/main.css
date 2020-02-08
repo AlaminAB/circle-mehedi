@@ -279,7 +279,9 @@
     margin-top: 15px;
     display: inline-block;
 }
-
+.main-wrapper-overly-text a:hover {
+    color: #DCB31A;
+}
 
 .main-wrapper-img {
     display: flex;
@@ -296,8 +298,126 @@ img#target-img {
 }
 
 
-/* 
+@media screen and (max-width: 1400px) , screen and (max-height: 750px) {
+.circle {
+  width: 450px;
+  height: 450px;
+}
+.same-style-round h4 {
+  font-size: 13px;
+}
+.round-text1 {
+  top: -53px;
+  left: 181px;
+}
+.round-text2 {
+  left: auto;
+  right: -101px;
+  top: -45px;
+  transform: rotate(0deg);
+}
+.round-text3 {
+  top: 53px;
+  left: auto;
+  right: -192px;
+}
+.round-text4 {
+  left: auto;
+  right: -234px;
+  top: 129px;
+}
+.round-text5 {
+  left: auto;
+  right: -245px;
+  top: 197px;
+}
+.round-text9 {
+  top: auto;
+  left: auto;
+  right: 44px;
+  bottom: -48px;
+}
+.round-text8 {
+  left: auto;
+  right: -103px;
+  top: auto;
+  bottom: -45px;
+}
+.round-text7 {
+  top: auto;
+  left: auto;
+  right: -196px;
+  bottom: 50px;
+}
+.round-text6 {
+  left: auto;
+  top: auto;
+  right: -232px;
+  bottom: 113px;
+}
+.round-text10 {
+  top: auto;
+  left: 6px;
+  right: auto;
+  bottom: -28px;
+}
+.round-text11 {
+  left: -44px;
+  right: auto;
+  top: auto;
+  bottom: 52px;
+}
+.round-text13 {
+  top: 215px;
+  left: -139px;
+  right: auto;
+}
+.round-text12 {
+  top: auto;
+  bottom: 122px;
+  left: -118px;
+  right: auto;
+}
+.round-text14 {
+  top: 138px;
+  left: -102px;
+  right: auto;
+}
+.round-text15 {
+  top: 42px;
+  left: -76px;
+  right: auto;
+}
+.round-text16 {
+  top: -20px;
+  left: 37px;
+  right: auto;
+}
+img#target-img {
+  height: 95px;
+}
+img#hand-sign {
+  height: 46px;
+  width: 30px;
+  margin-top: 22px;
+}
+}
 
+@media (max-width: 999px){
+  .same-style-round{
+  display: none;
+  }
+  section.c-home-intro.design-process-yellow-box-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+}
+
+/* 
  .main-wrapper:after {
     position: absolute;
     left: 50%;
@@ -321,4 +441,4 @@ img#target-img {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 9999;
-}  */
+}   */
