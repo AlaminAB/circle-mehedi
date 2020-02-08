@@ -50132,7 +50132,7 @@ img.md-device-show{
 .design-process-text-box p {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 0.98vw;
 }
 
 
@@ -50284,22 +50284,18 @@ section.c-home-intro.design-process-yellow-box-wrapper {
     position: relative;
 }
 
-.design-process-yellow-box-top h2 {
+/* .design-process-yellow-box-top h2 {
     font-size: 1.5vw;
     font-weight: 700;
     line-height: 2.2vw;
     margin-bottom: 2.2vw;
-}
-
+} */
 .design-process-yellow-box-top p {
     font-size: 18px;
     color: #000;
-    line-height: 24px;
+    line-height: 23px;
     margin-top: 0;
-    margin-bottom: 30px;
 }
-
-
 .design-process-yellow-box-top {
     position: absolute;
     top: 3vw;

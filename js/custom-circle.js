@@ -70,7 +70,20 @@
                 remove_color();
                 middle_img.src = array[0]
                 document.querySelector(".round-text1 > a").style.color = "#DCB31A ";
-                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 1";
+                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
+                <p>PRIMARY  RESEARCH : OBSERVE</p>
+
+                <p>Site-visits & observation</p>
+                <p>Ethnographic fieldwork</p>
+                <p>Stakeholder Interviews</p>
+                <p>Surveys</p>
+                <p>contextual Inquiries </p>
+                <p>Thick data</p>
+                <p>Deductive ( truth )</p>
+                <p>Inductive ( experience)</p>
+                <p>Abductive ( expanded experience)</p>
+
+                `;
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2006</h2>"
 
 
@@ -78,21 +91,21 @@
                 remove_color();
                 middle_img.src = array[1];
                 document.querySelector(".round-text2 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 2";
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="Site-visits & observation";
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2007</h2>"
 
             } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
                 middle_img.src = array[2];
                 document.querySelector(".round-text3 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 3"
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="Ethnographic fieldwork"
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2008</h2>"
 
             } else if (self.angle > 67.5 && self.angle < 90) {
                 remove_color();
                 middle_img.src = array[3];
                 document.querySelector(".round-text4 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 4"
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="Stakeholder Interviews"
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2009</h2>"
 
 
@@ -100,7 +113,7 @@
                 remove_color();
                 middle_img.src = array[4];
                 document.querySelector(".round-text5 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through my years of experience 5"
+                document.querySelector(".design-process-yellow-box-top > h2").innerHTML="Surveys"
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2010</h2>"
 
 
@@ -170,7 +183,7 @@
                 middle_img.src = array[12];
                 document.querySelector(".round-text13 > a").style.color = "#DCB31A";
                 document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process"
-                    document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2017</h2>"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2017</h2>"
 
             } else if (self.angle > 292.5 && self.angle < 315) {
                 remove_color();
@@ -178,7 +191,7 @@
                 middle_img.src = array[13];
                 document.querySelector(".round-text14 > a").style.color = "#DCB31A";
                 document.querySelector(".design-process-yellow-box-top > h2").innerHTML="My fluid multi disciplinary process developed through"
-                    document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2018</h2>"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2018</h2>"
 
             } else if (self.angle > 315 && self.angle < 337.5) {
                 remove_color();
@@ -500,14 +513,14 @@
 
         //Check for CSS3d support
         var el = document.createElement('p'),
-            has3d,
-            transforms = {
-                'webkitTransform': '-webkit-transform',
-                'OTransform': '-o-transform',
-                'msTransform': '-ms-transform',
-                'MozTransform': '-moz-transform',
-                'transform': 'transform'
-            };
+        has3d,
+        transforms = {
+            'webkitTransform': '-webkit-transform',
+            'OTransform': '-o-transform',
+            'msTransform': '-ms-transform',
+            'MozTransform': '-moz-transform',
+            'transform': 'transform'
+        };
 
         document.body.insertBefore(el, null);
 
@@ -662,127 +675,6 @@
 })(window);
 
 
-
-//RequestAnimatedFrame polyfill
-window.requestAnimFrame = (function () {
-    return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-        };
-})();
-
-var width = 450,
-    height = 450,
-    margin = 40;
-
-// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
-var radius = Math.min(width, height) / 2 - margin;
-
-// append the svg object to the div called 'my_dataviz'
-var svg = d3.select("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-// Create dummy data
-var topLevelFilters = {
-    'Size': '1',
-    'Color': '2',
-    'Pattern': '3',
-    'Material': '4',
-    'Price': '5',
-    'Brand': '6',
-    'Fit': '7',
-    'Features': '8'
-};
-var slices = 8,
-    sliceSize = Object.keys(topLevelFilters).length / 8;
-
-// set the color scale
-// var color = d3.scaleOrdinal()
-//     .domain(data);
-
-// Compute the position of each group on the pie:
-var pie = d3.pie()
-    .value(sliceSize)
-var data_ready = pie(d3.entries(topLevelFilters))
-
-// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
-svg
-    .selectAll('whatever')
-    .data(data_ready)
-    .enter()
-    .append('path')
-    .attr('d', d3.arc()
-        .innerRadius(0)
-        .outerRadius(radius)
-    )
-    .attr('fill', '#3e3e4d')
-    .attr("stroke", "#373746")
-    .attr("cursor", "pointer")
-    .style("stroke-width", "1px")
-    .text(function (d) {
-        return 'Label';
-    })
-    .on("click", (e, index, nodes) => {
-        console.log('User clicked on', nodes[index]);
-        console.log('Data', e.data);
-    })
-    .on("mouseover", (e, index, nodes) => {
-        // console.log(nodes[index]);
-        d3.select(nodes[index]).attr('opacity', '0.9');
-        // console.log('User mouseover on', e.data);
-    })
-    .on("mouseleave", (e, index, nodes) => {
-        // console.log(nodes[index]);
-        d3.select(nodes[index]).attr('opacity', '1');
-        // console.log('User mouseout from', e.data);
-    });
-
-// shape helper to build arcs:
-var arcGenerator = d3.arc()
-    .innerRadius(0)
-    .outerRadius(radius)
-
-// Updated Angle Calculation Function...
-function angle(d, offset, threshold) {
-    var a = (d.startAngle + d.endAngle) * 90 / Math.PI + offset;
-    // return a > threshold ? a - 180 : a;
-    return a;
-}
-
-svg.selectAll('whatever')
-    .data(data_ready)
-    .enter()
-    .append('text')
-    .text(function (d) {
-        return d.data.key
-    })
-    // .attr("transform", function(d) { //set text'ss origin to the centroid
-    //     //we have to make sure to set these before calling arc.centroid
-    //     d.innerRadius = (width/8); // Set Inner Coordinate
-    //     d.outerRadius = (width/4); // Set Outer Coordinate
-    //     // return "translate(" + arc2.centroid(d) + ")rotate(" + angle(d, -90, 90) + ")";
-    // })
-    .attr("transform", function (d) {
-        d.innerRadius = (width / 8); // Set Inner Coordinate
-        d.outerRadius = (width / 4); // Set Outer Coordinate
-        return "translate(" + arcGenerator.centroid(d) + ") rotate(" + angle(d, -90, 90) + ")";
-    })
-    .style("text-anchor", "start")
-    .style("font-family", "Arial")
-    .style("fill", "#fff")
-    .style("font-size", 17)
-    .style("pointer-events", "none")
-    .style("opacity", "0.8")
-
-let chck = new Propeller('.circle', {
-    inertia: 0.89
-});
-// console.log(chck.updateCSS())
 
 
 // console.log(chck.updateCSS())

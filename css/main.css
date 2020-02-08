@@ -414,6 +414,7 @@ img#hand-sign {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
+    margin-top: 45px;
 }
 }
 
