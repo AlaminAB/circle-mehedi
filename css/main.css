@@ -28,6 +28,8 @@
   height: 600px;
   border-radius: 50%;
   overflow: hidden;
+  cursor: url(https://d2p8kxfsucab5j.cloudfront.net/hand-small.png) 30 40,auto;
+  cursor: -webkit-image-set(url("https://d2p8kxfsucab5j.cloudfront.net/hand-small.png") 1x, url("https://d2p8kxfsucab5j.cloudfront.net/hand.png") 2x) 30 40,auto;
 
 }
 
