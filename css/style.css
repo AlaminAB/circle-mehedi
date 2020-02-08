@@ -50319,10 +50319,11 @@ section.c-home-intro.design-process-yellow-box-wrapper {
 
 .design-process-yellow-box-bottom h2 {
     color: #fff;
-    font-size: 1.7vw;
-    margin-bottom: 00;
-    line-height: 2.8vw;
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 40px;
     text-transform: uppercase;
+    white-space: normal;
 }
 
 .design-process-yellow-box-bottom h2 span {
