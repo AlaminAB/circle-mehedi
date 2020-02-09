@@ -50267,7 +50267,7 @@ img.md-device-show{
 
 
 section.c-home-intro.design-process-yellow-box-wrapper {
-        width: 94vw;
+    width: 94vw;
     height: 100vh;
     background: #1E1E1E;
     display: flex;
@@ -50276,11 +50276,11 @@ section.c-home-intro.design-process-yellow-box-wrapper {
 
 
 .design-process-yellow-box {
-    width: 26.09vw;
+    width: 27.09vw;
     height: calc(100vh - 44px);
     margin-top: 44px;
     white-space: normal;
-    background: #e6c24d;
+    background: #bbbab6;
     position: relative;
 }
 
@@ -50291,10 +50291,21 @@ section.c-home-intro.design-process-yellow-box-wrapper {
     margin-bottom: 2.2vw;
 } */
 .design-process-yellow-box-top p {
-    font-size: 18px;
+    font-size: 0.98vw;
     color: #000;
-    line-height: 23px;
+    line-height: 24px;
+    margin: 0;
+}
+.design-process-yellow-box-top h4 {
+    font-size: 1.84vw;
+    
+    color: #000;
     margin-top: 0;
+    padding-bottom: 2.80vw;
+    font-weight: 700;
+}
+.yellow-pt-20{
+    padding-top:1.56vw;
 }
 .design-process-yellow-box-top {
     position: absolute;
@@ -50314,7 +50325,7 @@ section.c-home-intro.design-process-yellow-box-wrapper {
     padding-left: 1.7vw;
     padding-right: 1.7vw;
     padding-bottom: 3vw;
-    padding-top: 3vw;
+    padding-top: 2vw;
 }
 
 .design-process-yellow-box-bottom h2 {
@@ -50327,7 +50338,8 @@ section.c-home-intro.design-process-yellow-box-wrapper {
 }
 
 .design-process-yellow-box-bottom h2 span {
-    color: #ffcd00;
+    color: #bb2525;
+    display: block;
 }
 
 .design-process-yellow-box-bottom a.bTn {

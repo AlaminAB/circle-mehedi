@@ -61,7 +61,7 @@
             function remove_color() {
                 let ele = document.querySelectorAll(".same-style-round > a")
                 for (let a = 0; a < ele.length; a++) {
-                    ele[a].style.color = "#838383"
+                    ele[a].style.color = "#BB2525"
                 }
             }
 
@@ -71,22 +71,20 @@
                 middle_img.src = array[0]
                 document.querySelector(".round-text1 > a").style.color = "#DCB31A ";
                 document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
-
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
+                <h4>Online Research </h4>
+                <p>* What people problems are we solving? </p>
+                <p>*How do we know its Real problem?</p>
+                <p>*How will we know if we have solve it?</p>
+                <p class='yellow-pt-20'>“If we start with the things that we make…. We’ll ask the question, who needs to be in this room to solve this problem?… and that path- starting with the product and then building out teams you need to solve that problem, can actually be  a faster , more effective way to produce inclusive outcomes 
+                Kat Holmes</p>
+                
 
                 `;
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML=` 
                 
-<h2><span>Site-visits & observation</span><br>Ethnographic fieldwork <br><span>Stakeholder Interviews</span> Surveys</h2>
+                <h2><span>Statistics</span>Online research
+                <span>Anecdotes</span> Building Team 
+                </h2>
                 `
 
 
@@ -94,21 +92,20 @@
                 remove_color();
                 middle_img.src = array[1];
                 document.querySelector(".round-text2 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".design-process-yellow-box-top").innerHTML=
+                ` 
+                <h4>Contextual Inquiries Site-visits & observation </h4>
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
+                <p>
 
+                “If we start with the things that we make…. We’ll ask the question, who needs to be in this room to solve this problem?… and that path- starting with the product and then building out teams you need to solve that problem, can actually be  a faster , more effective way to produce inclusive outcomes 
+                Kat Holmes
+
+                </p>
+                
                 `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2007</h2>"
+                document.querySelector(".design-process-yellow-box-bottom").innerHTML=
+                "<h2><br>Building Team<br>Anecdotes <br><span>Building Team </span> 2007</h2>"
 
             } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
