@@ -433,6 +433,16 @@ img#hand-sign {
     margin-top: -190px;
     margin-left: 59px;
 }
+.circle{
+  width: 550px;
+  height: 550px;
+}
+.circle-wrapper{
+    width: 100%;
+    height: 100%;
+    background: #1E1E1E;
+    padding: 60px 0px;
+}
 }
 
 @media (max-width: 699px){
