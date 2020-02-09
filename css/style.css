@@ -50173,7 +50173,7 @@ img.md-device-show{
 @media (max-width: 999px) {
     .fluid-as-think-wrapper {
         height: auto;
-        padding-top: 145px;
+        padding-top: 0px;
         margin-top: 0;
         width: 100%;
         padding-bottom: 70px;
@@ -50233,14 +50233,18 @@ img.md-device-show{
         line-height: 28px;
     }
 
-
+.design-process-text-box p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
 
 }
 
 
 @media (max-width:699px) {
     .fluid-as-think-wrapper {
-        padding-top: 85px;
+        padding-top: 0px;
         padding-bottom: 45px;
         padding-left: 15px;
         padding-right: 15px;
