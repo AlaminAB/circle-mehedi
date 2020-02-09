@@ -418,6 +418,12 @@ img#hand-sign {
 }
 }
 
+.yello-bottom{
+  display: none;
+}
+.yello-top{
+  display: none;
+}
 /* 
  .main-wrapper:after {
     position: absolute;

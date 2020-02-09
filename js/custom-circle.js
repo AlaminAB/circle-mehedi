@@ -48,7 +48,7 @@
             self.update.bind(self);
             self.angle += 0.6;
             self.updateCSS(self.angle);
-            console.log(self.angle)
+          
         }, 200);
 
 
@@ -61,350 +61,212 @@
             function remove_color() {
                 let ele = document.querySelectorAll(".same-style-round > a")
                 for (let a = 0; a < ele.length; a++) {
-                    ele[a].style.color = "#BB2525"
+                    ele[a].style.color = "#aaa"
                 }
+            }
+
+            function remove_yello_top() {
+                let ele = document.querySelectorAll(".yello-top")
+                for (let a = 0; a < ele.length; a++) {
+                    ele[a].style.display="none"
+                }
+            }
+
+            function remove_yello_bottom() {
+                let ele = document.querySelectorAll(".yello-bottom")
+                for (let a = 0; a < ele.length; a++) {
+                    ele[a].style.display="none"
+                }
+                
             }
 
 
             if (self.angle > 0 && self.angle < 22.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[0]
-                document.querySelector(".round-text1 > a").style.color = "#DCB31A ";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <h4>Online Research </h4>
-                <p>* What people problems are we solving? </p>
-                <p>*How do we know its Real problem?</p>
-                <p>*How will we know if we have solve it?</p>
-                <p class='yellow-pt-20'>“If we start with the things that we make…. We’ll ask the question, who needs to be in this room to solve this problem?… and that path- starting with the product and then building out teams you need to solve that problem, can actually be  a faster , more effective way to produce inclusive outcomes 
-                Kat Holmes</p>
-                
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML=` 
-                
-                <h2><span>Statistics</span>Online research
-                <span>Anecdotes</span> Building Team 
-                </h2>
-                `
+                document.querySelector(".round-text1 > a").style.color = "#BB2525 ";
+                document.querySelector(".yello-1").style.display="block"
+                document.querySelector(".yello_bottom-1").style.display="block"
 
 
             } else if (self.angle > 22.5 && self.angle < 45) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[1];
-                document.querySelector(".round-text2 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=
-                ` 
-                <h4>Contextual Inquiries Site-visits & observation </h4>
+                document.querySelector(".round-text2 > a").style.color = "#BB2525";
+                document.querySelector(".yello-2").style.display="block"
+                document.querySelector(".yello_bottom-2").style.display="block"
 
-                <p>
 
-                “If we start with the things that we make…. We’ll ask the question, who needs to be in this room to solve this problem?… and that path- starting with the product and then building out teams you need to solve that problem, can actually be  a faster , more effective way to produce inclusive outcomes 
-                Kat Holmes
-
-                </p>
-                
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML=
-                "<h2>Building TeamAnecdotes<span>Building Team </span> 2007</h2>"
 
             } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[2];
-                document.querySelector(".round-text3 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text3 > a").style.color = "#BB2525";
+                document.querySelector(".yello-3").style.display="block"
+                document.querySelector(".yello_bottom-3").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
 
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2008</h2>"
 
             } else if (self.angle > 67.5 && self.angle < 90) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[3];
-                document.querySelector(".round-text4 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text4 > a").style.color = "#BB2525";
+                document.querySelector(".yello-4").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
+                document.querySelector(".yello_bottom-4").style.display="block"
 
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2009</h2>"
 
 
             } else if (self.angle > 90 && self.angle <112.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[4];
-                document.querySelector(".round-text5 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text5 > a").style.color = "#BB2525";
+                document.querySelector(".yello-5").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2010</h2>"
-
-
+                document.querySelector(".yello_bottom-5").style.display="block"
+                
             } else if (self.angle > 112.5 && self.angle < 135) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[5];
-                document.querySelector(".round-text6 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text6 > a").style.color = "#BB2525";
+                document.querySelector(".yello-6").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2011</h2>"
+                document.querySelector(".yello_bottom-6").style.display="block"
+                
 
             } else if (self.angle > 135 && self.angle <157.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
                 middle_img.src = array[6];
-                document.querySelector(".round-text7 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text7 > a").style.color = "#BB2525";
+                document.querySelector(".yello-7").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2011</h2>"
+                document.querySelector(".yello_bottom-7").style.display="block"
+                
 
 
             } else if (self.angle > 157.5 && self.angle < 180) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[7];
-                document.querySelector(".round-text8 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text8 > a").style.color = "#BB2525";
+                document.querySelector(".yello-8").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2012</h2>"
+                document.querySelector(".yello_bottom-8").style.display="block"
+                
 
 
             } else if (self.angle > 180 && self.angle < 202.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[8];
-                document.querySelector(".round-text9 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text9 > a").style.color = "#BB2525";
+                document.querySelector(".yello-9").style.display="block"
+                document.querySelector(".yello_bottom-9").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2013</h2>"
+                
 
 
             } else if (self.angle > 202.5 && self.angle < 225) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[9];
-                document.querySelector(".round-text10 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text10 > a").style.color = "#BB2525";
+                document.querySelector(".yello-10").style.display="block"
+                document.querySelector(".yello_bottom-10").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2014</h2>"
+                
 
 
             } else if (self.angle > 225 && self.angle < 247.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[10];
-                document.querySelector(".round-text11 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text11 > a").style.color = "#BB2525";
+                document.querySelector(".yello-11").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2015</h2>"
+                document.querySelector(".yello_bottom-11").style.display="block"
 
 
             } else if (self.angle > 247.5 && self.angle < 270) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[11];
-                document.querySelector(".round-text12 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text12 > a").style.color = "#BB2525";
+                document.querySelector(".yello-12").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2016</h2>"
-
+                document.querySelector(".yello_bottom-12").style.display="block"
+                
 
             } else if (self.angle > 270 && self.angle < 292.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[12];
-                document.querySelector(".round-text13 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text13 > a").style.color = "#BB2525";
+                document.querySelector(".yello-13").style.display="block"
+                document.querySelector(".yello_bottom-13").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2017</h2>"
+                
 
             } else if (self.angle > 292.5 && self.angle < 315) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[13];
-                document.querySelector(".round-text14 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text14 > a").style.color = "#BB2525";
+                document.querySelector(".yello-14").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2018</h2>"
+                document.querySelector(".yello_bottom-14").style.display="block"
+                
 
             } else if (self.angle > 315 && self.angle < 337.5) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[14];
-                document.querySelector(".round-text15 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
+                document.querySelector(".round-text15 > a").style.color = "#BB2525";
+                document.querySelector(".yello-15").style.display="block"
 
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2019</h2>"
+                
+                document.querySelector(".yello_bottom-15").style.display="block"
 
 
             } else if (self.angle > 337.5 && self.angle < 360) {
                 remove_color();
+                remove_yello_top()
+                remove_yello_bottom()
 
                 middle_img.src = array[15];
-                document.querySelector(".round-text16 > a").style.color = "#DCB31A";
-                document.querySelector(".design-process-yellow-box-top > h2").innerHTML=` 
-                <p>PRIMARY  RESEARCH : OBSERVE</p>
-
-                <p>Site-visits & observation</p>
-                <p>Ethnographic fieldwork</p>
-                <p>Stakeholder Interviews</p>
-                <p>Surveys</p>
-                <p>contextual Inquiries </p>
-                <p>Thick data</p>
-                <p>Deductive ( truth )</p>
-                <p>Inductive ( experience)</p>
-                <p>Abductive ( expanded experience)</p>
-
-                `;
-                document.querySelector(".design-process-yellow-box-bottom").innerHTML="<h2><span>Journalists of Anger</span><br>Casa Crew <br><span>Morocco</span> 2020</h2>"
-
+                document.querySelector(".round-text16 > a").style.color = "#BB2525";
+                document.querySelector(".yello-16").style.display="block"
+                document.querySelector(".yello_bottom-16").style.display="block"
 
             } 
             if (count > array.length - 1) {
