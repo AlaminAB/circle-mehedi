@@ -105,7 +105,7 @@
                 
                 `;
                 document.querySelector(".design-process-yellow-box-bottom").innerHTML=
-                "<h2><br>Building Team<br>Anecdotes <br><span>Building Team </span> 2007</h2>"
+                "<h2>Building TeamAnecdotes<span>Building Team </span> 2007</h2>"
 
             } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
