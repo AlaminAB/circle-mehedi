@@ -44,13 +44,30 @@
         this.update();
         let self = this;
         let count = 0;
+        let chk=false;
         setInterval(function () {
-            self.update.bind(self);
+          if(!chk){
+              self.update.bind(self);
             self.angle += 0.6;
             self.updateCSS(self.angle);
           
+          }
         }, 200);
+document.querySelector(".play").addEventListener("click",function(){
+     chk = false;
+  
+    document.querySelector(".play").style.display="none";
+    document.querySelector(".pause").style.display="block";
 
+});
+
+document.querySelector(".pause").addEventListener("click",function(){
+     chk =true;
+    document.querySelector(".pause").style.display="none";
+  
+    document.querySelector(".play").style.display="block";
+
+})
 
         setInterval(reload, 250)
 
@@ -80,7 +97,6 @@
                 
             }
 
-
             if (self.angle > 0 && self.angle < 22.5) {
                 remove_color();
                 remove_yello_top()
@@ -89,7 +105,6 @@
                 document.querySelector(".round-text1 > a").style.color = "#BB2525 ";
                 document.querySelector(".yello-1").style.display="block"
                 document.querySelector(".yello_bottom-1").style.display="block"
-
 
             } else if (self.angle > 22.5 && self.angle < 45) {
                 remove_color();
@@ -100,8 +115,6 @@
                 document.querySelector(".yello-2").style.display="block"
                 document.querySelector(".yello_bottom-2").style.display="block"
 
-
-
             } else if (self.angle > 45 && self.angle < 67.5) {
                 remove_color();
                 remove_yello_top()
@@ -110,8 +123,6 @@
                 document.querySelector(".round-text3 > a").style.color = "#BB2525";
                 document.querySelector(".yello-3").style.display="block"
                 document.querySelector(".yello_bottom-3").style.display="block"
-
-
 
             } else if (self.angle > 67.5 && self.angle < 90) {
                 remove_color();
@@ -122,9 +133,6 @@
                 document.querySelector(".yello-4").style.display="block"
 
                 document.querySelector(".yello_bottom-4").style.display="block"
-
-
-
             } else if (self.angle > 90 && self.angle <112.5) {
                 remove_color();
                 remove_yello_top()
@@ -145,7 +153,6 @@
 
                 document.querySelector(".yello_bottom-6").style.display="block"
                 
-
             } else if (self.angle > 135 && self.angle <157.5) {
                 remove_color();
                 remove_yello_top()
@@ -156,8 +163,6 @@
 
                 document.querySelector(".yello_bottom-7").style.display="block"
                 
-
-
             } else if (self.angle > 157.5 && self.angle < 180) {
                 remove_color();
                 remove_yello_top()
@@ -169,8 +174,6 @@
 
                 document.querySelector(".yello_bottom-8").style.display="block"
                 
-
-
             } else if (self.angle > 180 && self.angle < 202.5) {
                 remove_color();
                 remove_yello_top()
@@ -181,9 +184,6 @@
                 document.querySelector(".yello-9").style.display="block"
                 document.querySelector(".yello_bottom-9").style.display="block"
 
-                
-
-
             } else if (self.angle > 202.5 && self.angle < 225) {
                 remove_color();
                 remove_yello_top()
@@ -193,9 +193,6 @@
                 document.querySelector(".round-text10 > a").style.color = "#BB2525";
                 document.querySelector(".yello-10").style.display="block"
                 document.querySelector(".yello_bottom-10").style.display="block"
-
-                
-
 
             } else if (self.angle > 225 && self.angle < 247.5) {
                 remove_color();
@@ -286,9 +283,8 @@
     };
 
     var p = Propeller.prototype;
-    p.remove_color = function () {
+ 
 
-    }
     p.initAngleGetterSetter = function () {
         Object.defineProperty(this, 'angle', {
             get: function () {
@@ -609,12 +605,7 @@
 
     p.updateCSS = function (a) {
 
-        // setInterval(function(){
-        //     a +=20;
-        //     if(a>360){
-        //         a=0;
-        //     }
-        // },100)
+      
         this.element.style[Propeller.cssPrefix + 'transform'] = 'rotate(' + a + 'deg) ' + this.accelerationPostfix;
 
 
@@ -743,113 +734,8 @@ window.requestAnimFrame = (function () {
     };
 })();
 
-var width = 450,
-height = 450,
-margin = 40;
 
-// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
-var radius = Math.min(width, height) / 2 - margin;
-
-// append the svg object to the div called 'my_dataviz'
-var svg = d3.select("svg")
-.attr("width", width)
-.attr("height", height)
-.append("g")
-.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-// Create dummy data
-var topLevelFilters = {
-    'Size': '1',
-    'Color': '2',
-    'Pattern': '3',
-    'Material': '4',
-    'Price': '5',
-    'Brand': '6',
-    'Fit': '7',
-    'Features': '8'
-};
-var slices = 8,
-sliceSize = Object.keys(topLevelFilters).length / 8;
-
-// set the color scale
-// var color = d3.scaleOrdinal()
-//     .domain(data);
-
-// Compute the position of each group on the pie:
-var pie = d3.pie()
-.value(sliceSize)
-var data_ready = pie(d3.entries(topLevelFilters))
-
-// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
-svg
-.selectAll('whatever')
-.data(data_ready)
-.enter()
-.append('path')
-.attr('d', d3.arc()
-    .innerRadius(0)
-    .outerRadius(radius)
-    )
-.attr('fill', '#3e3e4d')
-.attr("stroke", "#373746")
-.attr("cursor", "pointer")
-.style("stroke-width", "1px")
-.text(function (d) {
-    return 'Label';
-})
-.on("click", (e, index, nodes) => {
-    console.log('User clicked on', nodes[index]);
-    console.log('Data', e.data);
-})
-.on("mouseover", (e, index, nodes) => {
-        // console.log(nodes[index]);
-        d3.select(nodes[index]).attr('opacity', '0.9');
-        // console.log('User mouseover on', e.data);
-    })
-.on("mouseleave", (e, index, nodes) => {
-        // console.log(nodes[index]);
-        d3.select(nodes[index]).attr('opacity', '1');
-        // console.log('User mouseout from', e.data);
-    });
-
-// shape helper to build arcs:
-var arcGenerator = d3.arc()
-.innerRadius(0)
-.outerRadius(radius)
-
-// Updated Angle Calculation Function...
-function angle(d, offset, threshold) {
-    var a = (d.startAngle + d.endAngle) * 90 / Math.PI + offset;
-    // return a > threshold ? a - 180 : a;
-    return a;
-}
-
-svg.selectAll('whatever')
-.data(data_ready)
-.enter()
-.append('text')
-.text(function (d) {
-    return d.data.key
-})
-    // .attr("transform", function(d) { //set text'ss origin to the centroid
-    //     //we have to make sure to set these before calling arc.centroid
-    //     d.innerRadius = (width/8); // Set Inner Coordinate
-    //     d.outerRadius = (width/4); // Set Outer Coordinate
-    //     // return "translate(" + arc2.centroid(d) + ")rotate(" + angle(d, -90, 90) + ")";
-    // })
-    .attr("transform", function (d) {
-        d.innerRadius = (width / 8); // Set Inner Coordinate
-        d.outerRadius = (width / 4); // Set Outer Coordinate
-        return "translate(" + arcGenerator.centroid(d) + ") rotate(" + angle(d, -90, 90) + ")";
-    })
-    .style("text-anchor", "start")
-    .style("font-family", "Arial")
-    .style("fill", "#fff")
-    .style("font-size", 17)
-    .style("pointer-events", "none")
-    .style("opacity", "0.8")
-
-    let chck = new Propeller('.circle', {
+ new Propeller('.circle', {
         inertia: 0.89
     });
 // console.log(chck.updateCSS())

@@ -1,10 +1,4 @@
-/* .o-scroll_section.change-position {
-    position: absolute;
-    left: 0;
-    margin-left: 2880px;
-    top: 0;
-    z-index: 99999;
-} */
+
 .absolute-div {
     height: 100%;
     align-items: center;
@@ -15,6 +9,17 @@
     height: 100vh;
     background: #1E1E1E;
     margin-top: 20px;
+}
+button.play,.pause {position: absolute;left: 0;z-index: 99999;font-size: 18px;border-radius: 15px;text-transform: uppercase;font-weight: bold;color: rgb(187, 37, 37);padding: 13px 20px;background: #b4b4b4;}
+.play{
+  display: none;
+}
+.button-wrapper {
+    position: absolute;
+    left: 44%;
+    top: 61%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
 }
 .main-wrapper {
   position: relative;
@@ -303,6 +308,15 @@ img#target-img {
   width: 450px;
   height: 450px;
 }
+
+button.play, .pause {
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 8px 13px;
+}
+.button-wrapper{
+  left: 42%;
+}
 .same-style-round h4 {
   font-size: 13px;
 }
@@ -450,6 +464,14 @@ img#hand-sign {
   width: 300px;
   height: 300px;
 }
+button.play, .pause {
+    font-size: 12px;
+  
+    padding: 5px 10px;
+}
+.button-wrapper{
+  left: 40%;
+}
 .circle-wrapper{
     width: 100%;
     height: 100%;
@@ -483,28 +505,3 @@ img#hand-sign {
 .yello-top{
   display: none;
 }
-/* 
- .main-wrapper:after {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 108%;
-    height: 108%;
-    border: 1px solid red;
-    content: "";
-    border-radius: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.main-wrapper:before {
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    content: "";
-    background: lime;
-    /* transform: rotate(-90deg); 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 9999;
-}   */
