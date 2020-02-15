@@ -437,6 +437,7 @@ document.querySelector(".pause").addEventListener("click",function(){
         } else {
             this._angle = this.normalizeAngle(this.virtualAngle);
         }
+		
     }
 
     p.getAngleFromVirtual = function () {
@@ -486,7 +487,8 @@ document.querySelector(".pause").addEventListener("click",function(){
     p.updateAngleToMouse = function (event) {
         var xDiff = event.pageX - this.cx;
         var yDiff = event.pageY - this.cy;
-
+//console.log(xDiff);
+//console.log(yDiff);
         var mouseRadians = Math.atan2(xDiff, yDiff);
         var mouseDegrees = mouseRadians * (180 / Math.PI * -1) + 180;
 
@@ -513,11 +515,18 @@ document.querySelector(".pause").addEventListener("click",function(){
 
     p.initCoordinates = function () {
         var elementOffset = this.getViewOffset();
+		var width = window.innerWidth;
+		console.log(width+'----'+elementOffset.value);
+		if(width >= '1024') {
+			elementOffset = {x: 273, y: 20};
+		}
+		
+		console.log(elementOffset);
         this.cx = elementOffset.x + (this.element.offsetWidth / 2);
         this.cy = elementOffset.y + (this.element.offsetHeight / 2);
     }
 
-    p.initDrag = function () {
+    p.initDrag = function () { console.log("initDrag");
         this.speed = 0;
         this.lastMouseAngle = undefined;
         this.lastElementAngle = undefined;
@@ -604,7 +613,12 @@ document.querySelector(".pause").addEventListener("click",function(){
     }
 
     p.updateCSS = function (a) {
+
+      
         this.element.style[Propeller.cssPrefix + 'transform'] = 'rotate(' + a + 'deg) ' + this.accelerationPostfix;
+
+
+
     }
 
 
@@ -740,8 +754,4 @@ window.requestAnimFrame = (function () {
 
 document.querySelector(".got-button").addEventListener("click",function(){
     document.querySelector(".main-wrapper-overly").style.display="none"
-})
-
-document.querySelector(".check-click").addEventListener("click",function(e){
-    console.log(e.offsetLeft)
 })
