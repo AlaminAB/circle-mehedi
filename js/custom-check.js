@@ -518,7 +518,7 @@ document.querySelector(".pause").addEventListener("click",function(){
 		var width = window.innerWidth;
 		console.log(width+'----'+elementOffset.value);
 		if(width >= '1024') {
-			elementOffset = {x: 273, y: 20};
+			elementOffset = {x: 300, y: 20};
 		}
 		
 		console.log(elementOffset);
