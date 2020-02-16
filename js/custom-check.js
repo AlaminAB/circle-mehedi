@@ -14,7 +14,7 @@
         rotateParentInstantly: false,
         touchElement: null
     };
-    let array = ["assets/img/1.png", "assets/img/2.jpg", "assets/img/3.jpg", "assets/img/4.jpg", "assets/img/4.jpg", "assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg", "assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg", "assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg", "assets/img/15.jpg", "assets/img/16.jpg"];
+    let array = ["assets/img/1.jpg", "assets/img/2.jpg", "assets/img/3.jpg", "assets/img/4.jpg", "assets/img/4.jpg", "assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg", "assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg", "assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg", "assets/img/15.jpg", "assets/img/16.jpg"];
 
     let middle_img = document.querySelector("#middle-img");
 
@@ -48,11 +48,11 @@
         setInterval(function () {
           if(!chk){
               self.update.bind(self);
-            self.angle += 0.6;
+            self.angle += 0.5;
             self.updateCSS(self.angle);
           
           }
-        }, 200);
+        }, 100);
 document.querySelector(".play").addEventListener("click",function(){
      chk = false;
   

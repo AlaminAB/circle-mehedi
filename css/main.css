@@ -428,6 +428,20 @@ img#hand-sign {
 	width: 30px;
 	margin-top: 22px;
 }
+.design-process-yellow-box-top h4 {
+    font-size: 1.5vw;
+    padding-bottom:0; 
+}
+.design-process-yellow-box {
+    height: calc(100vh - 20px);
+    margin-top: 20px;
+    }
+    .design-process-yellow-box-bottom {
+    padding-left: 1.7vw;
+    padding-right: 1.7vw;
+    padding-bottom: 2vw;
+    padding-top: 1.5vw;
+}
 }
 
 @media (max-width: 999px){
